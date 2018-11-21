@@ -5,18 +5,17 @@ var paroleProibite = ["Fernando","guiderò","ed"];
 //navigo la frase e nel mentre
 //confronto le parole della frase con
 // le parole proibite
-
 for (var i = 0; i < fraseUtente.length; i++) {
   var parole = fraseUtente.split(" ");
 }
+
 var contatore = 0;
 while (contatore < paroleProibite.length){
   console.log(paroleProibite[contatore]);
   if(fraseUtente.includes(paroleProibite[contatore])){
-    fraseUtenteModificata = fraseUtente.replace(paroleProibite[contatore], 'xxx');
-    console.log(fraseUtenteModificata)
+    fraseUtente = fraseUtente.replace(paroleProibite[contatore], 'xxx');
   }
-  contatore++;
+  contatore ++;
 }
-console.log(fraseUtenteModificata);
-document.writeln(fraseUtenteModificata);
+console.log(fraseUtente);
+document.writeln(fraseUtente);
