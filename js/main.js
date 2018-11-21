@@ -29,6 +29,8 @@ function contaParoleFrase(fraseUtente){
 var paroleFraseCont = contaParoleFrase(fraseUtente);
 
 console.log(fraseUtente);
+document.getElementById('stampaFrase').innerHTML = fraseUtente;
 console.log("Numero parole censurate " +paroleCensurate);
+document.getElementById('stampaConteggioCensura').innerHTML = paroleCensurate;
 console.log("paroli totali nella frase " + paroleFraseCont);
-document.writeln(fraseUtente);
+document.getElementById('stampaConteggioParole').innerHTML = paroleFraseCont;
